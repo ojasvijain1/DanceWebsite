@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src="/static/script.js") 
+
+block style 
+    style 
+      include ../static/style.css
+
+block content 
+    
+    section#introSection
+        div.class Welcome to Ojasvi's Dance Academy
+        div.class.small Eat Dance Sleep repeat 
+
+    section#missionSection
+        h1 Our Mission
+        div.card
+            h2 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png" alt="")
+                div.card-content
+                    p This is the best dance academy of the universe.
+        div.card
+            h2 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png" alt="")
+                div.card-content
+                    p This is the best dance academy of the universe.
+        div.card
+            h2 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png" alt="")
+                div.card-content
+                    p This is the best dance academy of the universe.
+
+    section#sponsorsSection 
+        h1 Our Sponsors
+        div#sponsors
+            img(src="/static/img/samsung-logo.png" alt="Sponsor Image" class="spImage")
+            img(src="/static/img/hp-logo.png" alt="Sponsor Image" class="spImage")
+            img(src="/static/img/apple-logo.png" alt="Sponsor Image" class="spImage")
+            img(src="/static/img/skype-logo.png" alt="Sponsor Image" class="spImage")
